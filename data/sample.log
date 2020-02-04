@@ -1,0 +1,1289 @@
+/usr/lib/jvm/java-8-openjdk-amd64/bin/java -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:35453,suspend=y,server=n -ea -Didea.test.cyclic.buffer.size=1048576 -javaagent:/home/krzysztof/.local/share/JetBrains/Toolbox/apps/IDEA-U/ch-0/193.6015.39/plugins/Groovy/lib/agent/gragent.jar -javaagent:/home/krzysztof/.local/share/JetBrains/Toolbox/apps/IDEA-U/ch-0/193.6015.39/plugins/java/lib/rt/debugger-agent.jar -Dfile.encoding=UTF-8 -classpath /home/krzysztof/.local/share/JetBrains/Toolbox/apps/IDEA-U/ch-0/193.6015.39/lib/idea_rt.jar:/home/krzysztof/.local/share/JetBrains/Toolbox/apps/IDEA-U/ch-0/193.6015.39/plugins/junit/lib/junit5-rt.jar:/home/krzysztof/.local/share/JetBrains/Toolbox/apps/IDEA-U/ch-0/193.6015.39/plugins/junit/lib/junit-rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/cldrdata.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/dnsns.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/icedtea-sound.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/jaccess.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/java-atk-wrapper.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/localedata.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/nashorn.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/sunec.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/sunjce_provider.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/sunpkcs11.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/zipfs.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/management-agent.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/home/krzysztof/devel/otoma/ig-poc/out/test/classes:/home/krzysztof/devel/otoma/ig-poc/out/test/resources:/home/krzysztof/devel/otoma/ig-poc/out/production/classes:/home/krzysztof/devel/otoma/ig-poc/out/production/resources:/home/krzysztof/devel/otoma/ig-poc/out/published_language/classes:/home/krzysztof/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-configuration-processor/1.5.21.RELEASE/11e0b3ebe96fe134fd286107438e693e1e4fc7a2/spring-boot-configuration-processor-1.5.21.RELEASE.jar:/home/krzysztof/.gradle/caches/modules-2/files-2.1/commons-pool/commons-pool/1.6/4572d589699f09d866a226a14b7f4323c6d8f040/commons-pool-1.6.jar:/home/krzysztof/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-devtools/1.5.10.RELEASE/64a5e292f913e4b782954765778e6f6910c0208c/spring-boot-devtools-1.5.10.RELEASE.jar:/home/krzysztof/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-cloud-connectors/1.5.10.RELEASE/c7652818c1eb37bc9e0c4b686873b8876c579a5e/spring-boot-starter-cloud-connectors-1.5.10.RELEASE.jar:/home/krzysztof/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-localconfig-connector/1.2.5.RELEASE/561815f9458f620f1e7efa8c5fd68ac969999f03/spring-cloud-localconfig-connector-1.2.5.RELEASE.jar:/home/krzysztof/.m2/repository/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar:/home/krzysztof/.m2/repository/commons-io/commons-io/2.5/commons-io-2.5.jar:/home/krzysztof/.gradle/caches/modules-2/files-2.1/io.dropwizard.metrics/metrics-servlets/3.2.2/5e87074f5147f9e37c8408473fc9a487af68b013/metrics-servlets-3.2.2.jar:/home/krzysztof/.gradle/caches/modules-2/files-2.1/io.dropwizard.metrics/metrics-json/3.2.2/234612b9739a651eb2b71a8f9e9c4d11d7ccf849/metrics-json-3.2.2.jar:/home/krzysztof/.gradle/caches/modules-2/files-2.1/net.logstash.logback/logstash-logback-encoder/4.9/4c192f4a76a204ec7c7e0656b4384269d5a3a3d4/logstash-logback-encoder-4.9.jar:/home/krzysztof/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-json-org/2.8.10/730adb31e0f5d720dd980a0c96e7d7c06e87f04e/jackson-datatype-json-org-2.8.10.jar:/home/krzysztof/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-hppc/2.8.10/8e8e8c8b5e32bab3be7e10221b502ebbe7ca8090/jackson-datatype-hppc-2.8.10.jar:/home/krzysztof/.m2/rep
+Connected to the target VM, address: '127.0.0.1:35453', transport: 'socket'
+09:12:47,352 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+09:12:47,353 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+09:12:47,353 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/home/krzysztof/devel/otoma/ig-poc/out/test/resources/logback.xml]
+09:12:47,354 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
+09:12:47,354 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [file:/home/krzysztof/devel/otoma/ig-poc/out/test/resources/logback.xml]
+09:12:47,354 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [file:/home/krzysztof/devel/otoma/ig-poc/out/production/resources/logback.xml]
+09:12:47,412 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+09:12:47,421 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@4944252c - Adding [jar:file:/home/krzysztof/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.5.10.RELEASE/594b3efa04829f62754a19f59f81ba204636167a/spring-boot-1.5.10.RELEASE.jar!/org/springframework/boot/logging/logback/base.xml] to configuration watch list.
+09:12:47,421 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@44821a96 - URL [jar:file:/home/krzysztof/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.5.10.RELEASE/594b3efa04829f62754a19f59f81ba204636167a/spring-boot-1.5.10.RELEASE.jar!/org/springframework/boot/logging/logback/base.xml] is not of type file
+09:12:47,423 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@4944252c - Adding [jar:file:/home/krzysztof/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.5.10.RELEASE/594b3efa04829f62754a19f59f81ba204636167a/spring-boot-1.5.10.RELEASE.jar!/org/springframework/boot/logging/logback/defaults.xml] to configuration watch list.
+09:12:47,423 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@44821a96 - URL [jar:file:/home/krzysztof/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.5.10.RELEASE/594b3efa04829f62754a19f59f81ba204636167a/spring-boot-1.5.10.RELEASE.jar!/org/springframework/boot/logging/logback/defaults.xml] is not of type file
+09:12:47,425 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word clr with class [org.springframework.boot.logging.logback.ColorConverter]
+09:12:47,425 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word wex with class [org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter]
+09:12:47,425 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word wEx with class [org.springframework.boot.logging.logback.ExtendedWhitespaceThrowableProxyConverter]
+09:12:47,428 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [org.springframework.boot.logging.logback.LevelRemappingAppender]
+09:12:47,430 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [DEBUG_LEVEL_REMAPPER]
+09:12:47,438 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.apache.catalina.startup.DigesterFactory] to ERROR
+09:12:47,438 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.apache.catalina.util.LifecycleBase] to ERROR
+09:12:47,438 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.apache.coyote.http11.Http11NioProtocol] to WARN
+09:12:47,438 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.apache.sshd.common.util.SecurityUtils] to WARN
+09:12:47,438 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.apache.tomcat.util.net.NioSelectorPool] to WARN
+09:12:47,438 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.crsh.plugin] to WARN
+09:12:47,438 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.crsh.ssh] to WARN
+09:12:47,438 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.eclipse.jetty.util.component.AbstractLifeCycle] to ERROR
+09:12:47,438 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.hibernate.validator.internal.util.Version] to WARN
+09:12:47,438 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.springframework.boot.actuate.autoconfigure.CrshAutoConfiguration] to WARN
+09:12:47,438 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [org.springframework.boot.actuate.endpoint.jmx] to false
+09:12:47,438 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [DEBUG_LEVEL_REMAPPER] to Logger[org.springframework.boot.actuate.endpoint.jmx]
+09:12:47,439 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [org.thymeleaf] to false
+09:12:47,439 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [DEBUG_LEVEL_REMAPPER] to Logger[org.thymeleaf]
+09:12:47,439 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@4944252c - Adding [jar:file:/home/krzysztof/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.5.10.RELEASE/594b3efa04829f62754a19f59f81ba204636167a/spring-boot-1.5.10.RELEASE.jar!/org/springframework/boot/logging/logback/console-appender.xml] to configuration watch list.
+09:12:47,439 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@44821a96 - URL [jar:file:/home/krzysztof/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.5.10.RELEASE/594b3efa04829f62754a19f59f81ba204636167a/spring-boot-1.5.10.RELEASE.jar!/org/springframework/boot/logging/logback/console-appender.xml] is not of type file
+09:12:47,440 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+09:12:47,442 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [CONSOLE]
+09:12:47,443 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+09:12:47,492 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@4944252c - Adding [jar:file:/home/krzysztof/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.5.10.RELEASE/594b3efa04829f62754a19f59f81ba204636167a/spring-boot-1.5.10.RELEASE.jar!/org/springframework/boot/logging/logback/file-appender.xml] to configuration watch list.
+09:12:47,492 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@44821a96 - URL [jar:file:/home/krzysztof/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.5.10.RELEASE/594b3efa04829f62754a19f59f81ba204636167a/spring-boot-1.5.10.RELEASE.jar!/org/springframework/boot/logging/logback/file-appender.xml] is not of type file
+09:12:47,494 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+09:12:47,498 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILE]
+09:12:47,499 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+09:12:47,512 |-INFO in ch.qos.logback.core.rolling.FixedWindowRollingPolicy@a3d8174 - No compression will be used
+09:12:47,516 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - Active log file name: /tmp/spring.log
+09:12:47,516 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - File property is set to [/tmp/spring.log]
+09:12:47,517 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+09:12:47,517 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [CONSOLE] to Logger[ROOT]
+09:12:47,517 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [FILE] to Logger[ROOT]
+09:12:47,517 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.insightguard.igpoc] to INFO
+09:12:47,517 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.insightguard] to INFO
+09:12:47,517 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.javers] to WARN
+09:12:47,517 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [io.github.jhipster] to WARN
+09:12:47,517 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [javax.activation] to WARN
+09:12:47,517 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [javax.mail] to WARN
+09:12:47,517 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [javax.xml.bind] to WARN
+09:12:47,517 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [ch.qos.logback] to WARN
+09:12:47,517 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.codahale.metrics] to WARN
+09:12:47,517 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.ryantenney] to WARN
+09:12:47,517 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.sun] to WARN
+09:12:47,517 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.zaxxer] to WARN
+09:12:47,517 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [io.undertow] to WARN
+09:12:47,517 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [io.undertow.websockets.jsr] to ERROR
+09:12:47,517 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.ehcache] to WARN
+09:12:47,517 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.apache] to WARN
+09:12:47,517 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.apache.catalina.startup.DigesterFactory] to OFF
+09:12:47,517 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.bson] to WARN
+09:12:47,517 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.hibernate.validator] to WARN
+09:12:47,517 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.hibernate] to WARN
+09:12:47,518 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.hibernate.ejb.HibernatePersistence] to OFF
+09:12:47,518 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.springframework] to WARN
+09:12:47,518 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.springframework.web] to WARN
+09:12:47,518 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.springframework.security] to WARN
+09:12:47,518 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.springframework.cache] to WARN
+09:12:47,518 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.thymeleaf] to WARN
+09:12:47,518 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.xnio] to WARN
+09:12:47,518 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [springfox] to WARN
+09:12:47,518 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [sun.rmi] to WARN
+09:12:47,518 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [liquibase] to WARN
+09:12:47,518 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [LiquibaseSchemaResolver] to INFO
+09:12:47,518 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [sun.rmi.transport] to WARN
+09:12:47,518 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+09:12:47,518 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [CONSOLE] to Logger[ROOT]
+09:12:47,518 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+09:12:47,519 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@1ba9117e - Registering current configuration as safe fallback point
+
+#   ██████╗ ████████╗ ██████╗ ███╗   ███╗ █████╗
+#  ██╔═══██╗╚══██╔══╝██╔═══██╗████╗ ████║██╔══██╗
+#  ██║   ██║   ██║   ██║   ██║██╔████╔██║███████║
+#  ██║   ██║   ██║   ██║   ██║██║╚██╔╝██║██╔══██║
+#  ╚██████╔╝   ██║   ╚██████╔╝██║ ╚═╝ ██║██║  ██║
+#   ╚═════╝    ╚═╝    ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝
+#
+
+
+
+:: Running Spring Boot 1.5.10.RELEASE ::
+:: Application version:  ::
+:: otoma :: http://otoma.com/ ::
+
+
+2020-01-28 09:12:49.427  WARN 12467 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/ig_poc/test,with-mocked-classifier": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)
+2020-01-28 09:12:49.431  WARN 12467 --- [           main] ory$DuplicateJsonObjectContextCustomizer :
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/home/krzysztof/.gradle/caches/modules-2/files-2.1/org.apache.geronimo.bundles/json/20090211_1/dd3e57b26450cd682f5991c537ab44ba1fbbdb54/json-20090211_1.jar!/org/json/JSONObject.class
+	jar:file:/home/krzysztof/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2020-01-28 09:12:49.433  INFO 12467 --- [           main] .i.k.a.PublishReleaseIntTest_Performance : The following profiles are active: test,with-mocked-classifier
+2020-01-28 09:12:51.574  INFO 12467 --- [           main] o.t.o.p.UpfrontAllocatingPageSource      : Allocating 256MB in chunks
+2020-01-28 09:12:58.017  INFO 12467 --- [           main] o.p.core.schema.SchemaManagerImpl        : creating entity with name jv_commit using ddl:
+CREATE TABLE jv_commit (
+commit_pk BIGINT NOT NULL,
+author VARCHAR(200),
+commit_date TIMESTAMP,
+commit_id NUMERIC(22,2),
+CONSTRAINT jv_commit_pk PRIMARY KEY(commit_pk)
+)
+2020-01-28 09:12:58.018  INFO 12467 --- [           main] o.p.core.schema.SchemaManagerImpl        : creating entity with name jv_commit_commit_id_idx using ddl:
+CREATE INDEX jv_commit_commit_id_idx ON jv_commit(commit_id)
+2020-01-28 09:12:58.018  INFO 12467 --- [           main] o.p.core.schema.SchemaManagerImpl        : creating entity with name jv_commit_pk_seq using ddl:
+CREATE SEQUENCE jv_commit_pk_seq
+2020-01-28 09:12:58.019  INFO 12467 --- [           main] o.p.core.schema.SchemaManagerImpl        : creating entity with name jv_commit_property using ddl:
+CREATE TABLE jv_commit_property (
+property_name VARCHAR(191) NOT NULL,
+property_value VARCHAR(600),
+commit_fk BIGINT,
+CONSTRAINT jv_commit_property_pk PRIMARY KEY(commit_fk, property_name),
+CONSTRAINT jv_commit_property_commit_fk FOREIGN KEY(commit_fk) REFERENCES jv_commit(commit_pk)
+)
+2020-01-28 09:12:58.019  INFO 12467 --- [           main] o.p.core.schema.SchemaManagerImpl        : creating entity with name jv_commit_property_commit_fk_idx using ddl:
+CREATE INDEX jv_commit_property_commit_fk_idx ON jv_commit_property(commit_fk)
+2020-01-28 09:12:58.019  INFO 12467 --- [           main] o.p.core.schema.SchemaManagerImpl        : creating entity with name jv_commit_property_property_name_property_value_idx using ddl:
+CREATE INDEX jv_commit_property_property_name_property_value_idx ON jv_commit_property(property_name,property_value)
+2020-01-28 09:12:58.020  INFO 12467 --- [           main] o.p.core.schema.SchemaManagerImpl        : creating entity with name jv_global_id using ddl:
+CREATE TABLE jv_global_id (
+global_id_pk BIGINT NOT NULL,
+local_id VARCHAR(191),
+fragment VARCHAR(200),
+type_name VARCHAR(200),
+owner_id_fk BIGINT,
+CONSTRAINT jv_global_id_pk PRIMARY KEY(global_id_pk),
+CONSTRAINT jv_global_id_owner_id_fk FOREIGN KEY(owner_id_fk) REFERENCES jv_global_id(global_id_pk)
+)
+2020-01-28 09:12:58.020  INFO 12467 --- [           main] o.p.core.schema.SchemaManagerImpl        : creating entity with name jv_global_id_local_id_idx using ddl:
+CREATE INDEX jv_global_id_local_id_idx ON jv_global_id(local_id)
+2020-01-28 09:12:58.020  INFO 12467 --- [           main] o.p.core.schema.SchemaManagerImpl        : creating entity with name jv_global_id_owner_id_fk_idx using ddl:
+CREATE INDEX jv_global_id_owner_id_fk_idx ON jv_global_id(owner_id_fk)
+2020-01-28 09:12:58.020  INFO 12467 --- [           main] o.p.core.schema.SchemaManagerImpl        : creating entity with name jv_global_id_pk_seq using ddl:
+CREATE SEQUENCE jv_global_id_pk_seq
+2020-01-28 09:12:58.021  INFO 12467 --- [           main] o.p.core.schema.SchemaManagerImpl        : creating entity with name jv_snapshot using ddl:
+CREATE TABLE jv_snapshot (
+snapshot_pk BIGINT NOT NULL,
+type VARCHAR(200),
+version BIGINT,
+state TEXT,
+changed_properties TEXT,
+managed_type VARCHAR(200),
+global_id_fk BIGINT,
+commit_fk BIGINT,
+CONSTRAINT jv_snapshot_pk PRIMARY KEY(snapshot_pk),
+CONSTRAINT jv_snapshot_global_id_fk FOREIGN KEY(global_id_fk) REFERENCES jv_global_id(global_id_pk),
+CONSTRAINT jv_snapshot_commit_fk FOREIGN KEY(commit_fk) REFERENCES jv_commit(commit_pk)
+)
+2020-01-28 09:12:58.021  INFO 12467 --- [           main] o.p.core.schema.SchemaManagerImpl        : creating entity with name jv_snapshot_global_id_fk_idx using ddl:
+CREATE INDEX jv_snapshot_global_id_fk_idx ON jv_snapshot(global_id_fk)
+2020-01-28 09:12:58.021  INFO 12467 --- [           main] o.p.core.schema.SchemaManagerImpl        : creating entity with name jv_snapshot_commit_fk_idx using ddl:
+CREATE INDEX jv_snapshot_commit_fk_idx ON jv_snapshot(commit_fk)
+2020-01-28 09:12:58.021  INFO 12467 --- [           main] o.p.core.schema.SchemaManagerImpl        : creating entity with name jv_snapshot_pk_seq using ddl:
+CREATE SEQUENCE jv_snapshot_pk_seq
+2020-01-28 09:13:04.007  INFO 12467 --- [           main] .i.k.a.PublishReleaseIntTest_Performance : Started PublishReleaseIntTest_Performance in 16.26 seconds (JVM running for 16.981)
+2020-01-28 09:13:04.334  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 1 (class com.insightguard.igapp.knowledge.domain.KbMessageType)
+2020-01-28 09:13:04.342  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 101 (class com.insightguard.igapp.knowledge.domain.KbParameter)
+2020-01-28 09:13:04.347  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.349  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.357  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.358  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.360  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.360  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.363  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.363  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.365  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.365  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.368  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.368  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.371  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.371  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.374  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.374  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.377  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.377  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.379  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.380  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.382  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.382  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.385  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.385  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.388  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.388  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.391  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.391  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.393  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.394  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.397  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.397  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.401  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.401  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.403  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.404  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.406  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.406  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.408  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.408  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.411  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.411  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.413  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.413  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.415  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.416  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.418  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.418  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.420  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.420  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.422  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.422  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.424  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.424  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.426  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.426  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.428  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.429  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.431  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.431  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.433  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.433  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.435  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.435  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.437  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.437  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.439  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.439  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.441  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.441  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.443  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.443  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.445  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.445  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.447  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.447  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.449  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.449  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.451  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.451  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.453  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.453  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.455  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.455  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.457  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.457  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.459  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.459  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.461  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.461  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.463  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.463  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.465  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.465  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.467  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.467  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.470  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.470  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.472  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.472  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.474  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.474  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.475  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.475  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.477  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.477  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.479  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.479  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.481  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.481  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.482  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.483  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.484  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.485  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.486  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.487  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.488  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.488  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.490  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.490  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.492  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.492  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.494  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.494  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.496  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.496  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.498  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.498  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.500  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.500  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.502  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.502  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.504  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.504  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.505  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.505  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.507  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.507  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.509  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.509  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.511  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.511  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.513  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.513  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.514  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.514  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.516  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.516  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.518  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.518  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.520  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.521  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.523  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.523  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.526  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.526  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.528  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.528  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.530  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.530  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.532  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.532  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.533  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.533  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.535  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.535  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.537  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.537  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.538  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.538  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.540  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.540  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.541  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.542  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.543  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.543  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.545  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.545  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.547  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.547  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.548  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.549  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.550  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.550  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.551  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.551  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.553  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.553  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.554  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.555  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.556  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.556  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.558  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.558  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.559  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.560  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.561  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.561  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.562  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.562  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.564  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:04.564  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:04.567  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 0 (class com.insightguard.igapp.knowledge.domain.KbParameterTemplate)
+2020-01-28 09:13:04.568  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 0 (class com.insightguard.igapp.knowledge.domain.KbTimerParameter)
+2020-01-28 09:13:04.569  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 100 (class com.insightguard.igapp.knowledge.domain.KbElement)
+2020-01-28 09:13:04.638  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 10 (class com.insightguard.igapp.knowledge.domain.KbSystem)
+2020-01-28 09:13:04.647  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 180 (class com.insightguard.igapp.knowledge.domain.KbInterface)
+2020-01-28 09:13:04.799  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 180 (class com.insightguard.igapp.knowledge.domain.KbInterfaceConsumer)
+2020-01-28 09:13:05.052  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 180 (class com.insightguard.igapp.knowledge.domain.KbInterfaceMessage)
+2020-01-28 09:13:05.259  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 1800 (class com.insightguard.igapp.knowledge.domain.KbMessageElement)
+2020-01-28 09:13:05.638  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 0 (class com.insightguard.igapp.knowledge.domain.TpEnvironment)
+2020-01-28 09:13:05.642  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 0 (class com.insightguard.igapp.knowledge.domain.TpConnector)
+2020-01-28 09:13:05.647  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 0 (class com.insightguard.igapp.knowledge.domain.TpTransformation)
+2020-01-28 09:13:05.661  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 0 (class com.insightguard.igapp.knowledge.domain.TpInjection)
+2020-01-28 09:13:05.675  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 0 (class com.insightguard.igapp.knowledge.domain.TpInterceptAction)
+2020-01-28 09:13:05.686  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 0 (class com.insightguard.igapp.knowledge.domain.TpInterceptionPoint)
+2020-01-28 09:13:05.691  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 0 (class com.insightguard.igapp.knowledge.domain.TpSystemEnvironment)
+2020-01-28 09:13:05.696  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 0 (class com.insightguard.igapp.knowledge.domain.TpInterfaceSystemSimulation)
+2020-01-28 09:13:05.696  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating all caches
+2020-01-28 09:13:05.704  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: INTERFACE_MESSAGE_CACHE_BY_REF_AND_RELEASE
+2020-01-28 09:13:05.704  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: INTERFACE_MESSAGE_CONSUMERS_CACHE_BY_RELEASE
+2020-01-28 09:13:05.705  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.infrastructure.domain.Authority
+2020-01-28 09:13:05.705  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: MESSAGE_ELEMENT_CACHE_BY_MESSAGE_ID_AND_RELEASE
+2020-01-28 09:13:05.705  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: goldCopyCache
+2020-01-28 09:13:05.705  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbUseCase
+2020-01-28 09:13:05.705  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: ELEMENTS_BY_FIELD_TAGS_AND_RELEASE
+2020-01-28 09:13:05.705  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbInterfaceMessage
+2020-01-28 09:13:05.705  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: ELEMENT_ENRICHMENT_CACHE_BY_SYSTEM_ID_AND_RELEASE
+2020-01-28 09:13:05.705  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: HISTORICAL_PARAMETER_BY_NAME_AND_RELEASE_AND_VERSION_CACHE
+2020-01-28 09:13:05.705  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbParameter
+2020-01-28 09:13:05.705  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbRelease
+2020-01-28 09:13:05.705  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:05.705  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.infrastructure.domain.User
+2020-01-28 09:13:05.705  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbDomain
+2020-01-28 09:13:05.705  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: USE_CASE_HISTORICAL_ENTRY_CACHE
+2020-01-28 09:13:05.705  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbParameterTemplate
+2020-01-28 09:13:05.705  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbInterface
+2020-01-28 09:13:05.705  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: UseCaseGraphCache
+2020-01-28 09:13:05.708  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: historyStatesCache
+2020-01-28 09:13:05.708  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:05.708  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.infrastructure.domain.User.authorities
+2020-01-28 09:13:05.708  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: TIMER_PARAMETER_BY_NAME_AND_RELEASE_CACHE
+2020-01-28 09:13:05.708  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: MESSAGE_ELEMENT_CACHE_BY_RELEASE
+2020-01-28 09:13:05.708  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbMessageType
+2020-01-28 09:13:05.708  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: USE_CASE_IN_VERSION
+2020-01-28 09:13:05.708  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbUseCaseFile
+2020-01-28 09:13:05.708  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: ELEMENT_BY_FIELD_TAG_AND_RELEASE
+2020-01-28 09:13:05.708  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbElement
+2020-01-28 09:13:05.708  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbSystem
+2020-01-28 09:13:05.708  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: RELEASE_CONTENT_CACHE
+2020-01-28 09:13:05.708  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbUseCaseParent
+2020-01-28 09:13:05.708  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbInterfaceConsumer
+2020-01-28 09:13:05.708  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_TEMPLATE_CACHE
+2020-01-28 09:13:05.708  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbSystemType
+2020-01-28 09:13:17.238  INFO 12467 --- [           main] c.i.i.knowledge.api.BPMNImportResource   : Extract metadata called
+2020-01-28 09:13:17.708  INFO 12467 --- [           main] c.i.i.k.s.impl.KbUseCaseCommonService    : Acquire lock for 6e1208a7-9be4-42f0-a108-5106a91e64fa by user
+2020-01-28 09:13:18.349  INFO 12467 --- [           main] c.i.i.k.s.impl.KbUseCaseCommonService    : Acquire lock for 6e1208a7-9be4-42f0-a108-5106a91e64fa by user
+2020-01-28 09:13:18.390  INFO 12467 --- [           main] c.i.i.knowledge.api.KbUseCaseResource    : REST request to publish UseCase generated-medium-use-case-2-KbDomainDTO{id=8, shortCode='CB', name='Correspondent Banking', description='none', hierarchyLevel='SUB_BUSINESS_AREA'} by user user
+2020-01-28 09:13:21.451  INFO 12467 --- [           main] c.i.i.k.l.LockingUseCaseLifecycleManager : use case persisted: 6e1208a7-9be4-42f0-a108-5106a91e64fa
+2020-01-28 09:13:21.453  INFO 12467 --- [           main] c.i.i.knowledge.api.KbUseCaseResource    : async publish use case process started
+2020-01-28 09:13:22.234  INFO 12467 --- [           main] .i.i.k.r.p.PublicationProcessServiceImpl : Scheduling publication: 6b412035-fe5b-408c-97cb-c98a8b067f77 user
+2020-01-28 09:13:22.253  INFO 12467 --- [           main] .i.i.k.r.p.PublicationProcessServiceImpl : Published start events
+2020-01-28 09:13:22.273  INFO 12467 --- [           main] .i.i.k.r.p.PublicationProcessServiceImpl : Start publication of release '6b412035-fe5b-408c-97cb-c98a8b067f77'
+2020-01-28 09:13:22.284  INFO 12467 --- [           main] c.i.i.k.s.impl.KbReleaseServiceImpl      : ======== Starting NEW publication, releaseUuid: 6b412035-fe5b-408c-97cb-c98a8b067f77 =========
+2020-01-28 09:13:22.817  INFO 12467 --- [           main] c.i.i.k.release.ReleaseContentValidator  : Validating 1 use cases
+2020-01-28 09:13:24.132  INFO 12467 --- [           main] .i.k.r.c.ReleaseContentDescriptorFactory : Building release content for release '6b412035-fe5b-408c-97cb-c98a8b067f77' in version 0.0
+2020-01-28 09:13:24.136  INFO 12467 --- [           main] .i.k.r.c.ReleaseContentDescriptorFactory : Exporting 100 elements to release content
+2020-01-28 09:13:24.140  INFO 12467 --- [           main] .i.k.r.c.ReleaseContentDescriptorFactory : Exporting 101 parameters to release content
+2020-01-28 09:13:24.142  INFO 12467 --- [           main] .i.k.r.c.ReleaseContentDescriptorFactory : Exporting 0 parameter templates to release content
+2020-01-28 09:13:24.153  INFO 12467 --- [           main] .i.k.r.c.ReleaseContentDescriptorFactory : Exporting 10 systems to release content
+2020-01-28 09:13:24.316  INFO 12467 --- [           main] .i.k.r.c.ReleaseContentDescriptorFactory : Exporting 180 interfaces to release content
+2020-01-28 09:13:24.745  INFO 12467 --- [           main] .i.k.r.c.ReleaseContentDescriptorFactory : Exporting 180 interface messages to release content
+2020-01-28 09:13:24.769  INFO 12467 --- [           main] .i.k.r.c.ReleaseContentDescriptorFactory : Exporting 1 use cases and subprocesses to release content
+2020-01-28 09:13:24.771  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Delete test cases remaining from previous failed publication, useCase: 6e1208a7-9be4-42f0-a108-5106a91e64fa, release: {"uuid":"6b412035-fe5b-408c-97cb-c98a8b067f77","version":"1.0","name":"Performance Release 2"}
+2020-01-28 09:13:24.791  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Test case discovery process started for release: 6b412035-fe5b-408c-97cb-c98a8b067f77
+2020-01-28 09:13:26.797  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:27.377  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:27.895  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:28.373  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:28.785  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:29.167  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:29.551  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:29.913  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:30.305  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:30.823  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:31.283  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:31.793  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:32.401  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:33.086  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:33.801  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:34.346  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:34.752  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:35.133  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:35.509  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:35.904  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:36.310  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:36.685  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:37.061  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:37.411  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:37.790  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:38.338  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:38.777  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:39.332  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:39.877  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:41.393  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:41.952  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:43.052  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:43.696  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:44.376  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:45.012  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:45.825  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:46.581  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:47.227  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:47.885  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:48.569  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:49.396  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:50.316  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:50.715  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:51.187  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:51.666  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:13:52.103  INFO 12467 --- [           main] c.o.testscript.TestCaseDiscoveryProcess  : Use-case '6e1208a7-9be4-42f0-a108-5106a91e64fa' processed with 4565 total paths. Discovered 4565 valid TC and 0 invalid TC and 0 skipped TC due to errors: []
+2020-01-28 09:13:52.103  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Publication of use case resulted with 4565 valid and 0 invalid test cases out of 4565 possible paths in BPMN
+2020-01-28 09:13:52.122  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Test case discovery process completed
+2020-01-28 09:13:52.122  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 65 test cases
+2020-01-28 09:13:52.128  INFO 12467 --- [           main] c.i.i.k.r.ReleaseContentValidationReport : Publish use case statistics : Valid : 1, Invalid : 0
+2020-01-28 09:13:52.142  INFO 12467 --- [           main] .i.i.k.r.p.PublicationProcessServiceImpl : Publication of release '6b412035-fe5b-408c-97cb-c98a8b067f77' completed with status: PUBLISHED. It took: 00:00:29
+2020-01-28 09:13:52.143  INFO 12467 --- [           main] .i.i.k.r.p.PublicationProcessServiceImpl : Clean Release and Use case hash map validation status
+2020-01-28 09:13:52.177  INFO 12467 --- [           main] c.i.i.k.r.process.PublicationProcess     : ======== Ended publication, releaseUuid: 6b412035-fe5b-408c-97cb-c98a8b067f77 =========
+2020-01-28 09:13:52.195  INFO 12467 --- [           main] c.i.i.k.r.api.KbPublishReportResource    : Requested latest report for release: 6b412035-fe5b-408c-97cb-c98a8b067f77
+Performance (for 4565 tc): 6.57 ms/tc => 9136 tc/min
+
+java.lang.AssertionError:
+Expecting:
+ <6.566922234392114>
+to be less than:
+ <6.0>
+
+	at com.insightguard.igapp.knowledge.api.PublishReleaseIntTest_Performance.measurePublishPerformance(PublishReleaseIntTest_Performance.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:40)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+
+2020-01-28 09:13:52.308  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 1 (class com.insightguard.igapp.knowledge.domain.KbMessageType)
+2020-01-28 09:13:52.309  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 101 (class com.insightguard.igapp.knowledge.domain.KbParameter)
+2020-01-28 09:13:52.309  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.310  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.311  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.311  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.312  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.312  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.313  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.313  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.313  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.313  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.314  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.314  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.315  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.315  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.315  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.315  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.316  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.316  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.317  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.317  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.317  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.318  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.318  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.318  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.319  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.319  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.320  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.320  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.320  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.320  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.321  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.321  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.321  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.321  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.322  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.322  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.323  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.323  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.323  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.323  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.324  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.324  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.325  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.325  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.325  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.325  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.326  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.326  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.326  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.326  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.327  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.327  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.327  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.328  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.328  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.328  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.329  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.329  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.329  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.329  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.330  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.330  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.330  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.330  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.331  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.331  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.331  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.331  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.332  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.332  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.332  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.332  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.333  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.333  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.333  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.333  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.334  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.334  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.335  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.335  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.335  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.335  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.336  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.336  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.336  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.336  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.337  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.337  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.338  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.338  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.338  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.338  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.339  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.339  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.339  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.339  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.340  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.340  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.340  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.340  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.341  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.341  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.341  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.341  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.342  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.342  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.342  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.342  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.343  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.343  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.344  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.344  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.344  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.344  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.345  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.345  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.346  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.346  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.346  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.346  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.347  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.347  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.348  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.348  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.348  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.348  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.349  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.349  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.349  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.349  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.350  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.350  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.350  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.350  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.351  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.351  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.351  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.351  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.352  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.352  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.352  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.352  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.353  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.353  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.354  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.354  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.354  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.354  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.355  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.355  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.355  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.356  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.356  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.356  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.357  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.357  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.357  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.357  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.358  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.358  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.359  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.359  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.359  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.359  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.360  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.360  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.360  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.360  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.361  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.361  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.362  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.362  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.362  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.362  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.363  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.363  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.364  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.364  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.364  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.364  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.365  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.365  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.366  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.366  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.366  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.366  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.367  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.367  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.367  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.367  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.368  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.368  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.369  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.369  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.369  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.369  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.370  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.370  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.370  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.370  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.371  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:52.371  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:52.371  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 0 (class com.insightguard.igapp.knowledge.domain.KbParameterTemplate)
+2020-01-28 09:13:52.372  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 0 (class com.insightguard.igapp.knowledge.domain.KbTimerParameter)
+2020-01-28 09:13:52.372  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 100 (class com.insightguard.igapp.knowledge.domain.KbElement)
+2020-01-28 09:13:52.392  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 10 (class com.insightguard.igapp.knowledge.domain.KbSystem)
+2020-01-28 09:13:52.394  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 180 (class com.insightguard.igapp.knowledge.domain.KbInterface)
+2020-01-28 09:13:52.472  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 180 (class com.insightguard.igapp.knowledge.domain.KbInterfaceConsumer)
+2020-01-28 09:13:52.669  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 180 (class com.insightguard.igapp.knowledge.domain.KbInterfaceMessage)
+2020-01-28 09:13:52.821  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 1800 (class com.insightguard.igapp.knowledge.domain.KbMessageElement)
+2020-01-28 09:13:53.035  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 0 (class com.insightguard.igapp.knowledge.domain.TpEnvironment)
+2020-01-28 09:13:53.037  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 0 (class com.insightguard.igapp.knowledge.domain.TpConnector)
+2020-01-28 09:13:53.040  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 0 (class com.insightguard.igapp.knowledge.domain.TpTransformation)
+2020-01-28 09:13:53.045  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 0 (class com.insightguard.igapp.knowledge.domain.TpInjection)
+2020-01-28 09:13:53.051  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 0 (class com.insightguard.igapp.knowledge.domain.TpInterceptAction)
+2020-01-28 09:13:53.056  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 0 (class com.insightguard.igapp.knowledge.domain.TpInterceptionPoint)
+2020-01-28 09:13:53.058  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 0 (class com.insightguard.igapp.knowledge.domain.TpSystemEnvironment)
+2020-01-28 09:13:53.061  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 0 (class com.insightguard.igapp.knowledge.domain.TpInterfaceSystemSimulation)
+2020-01-28 09:13:53.061  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating all caches
+2020-01-28 09:13:53.067  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: INTERFACE_MESSAGE_CACHE_BY_REF_AND_RELEASE
+2020-01-28 09:13:53.067  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: INTERFACE_MESSAGE_CONSUMERS_CACHE_BY_RELEASE
+2020-01-28 09:13:53.067  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.infrastructure.domain.Authority
+2020-01-28 09:13:53.067  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: MESSAGE_ELEMENT_CACHE_BY_MESSAGE_ID_AND_RELEASE
+2020-01-28 09:13:53.067  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: goldCopyCache
+2020-01-28 09:13:53.067  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbUseCase
+2020-01-28 09:13:53.067  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: ELEMENTS_BY_FIELD_TAGS_AND_RELEASE
+2020-01-28 09:13:53.067  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbInterfaceMessage
+2020-01-28 09:13:53.067  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: ELEMENT_ENRICHMENT_CACHE_BY_SYSTEM_ID_AND_RELEASE
+2020-01-28 09:13:53.067  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: HISTORICAL_PARAMETER_BY_NAME_AND_RELEASE_AND_VERSION_CACHE
+2020-01-28 09:13:53.068  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbParameter
+2020-01-28 09:13:53.068  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbRelease
+2020-01-28 09:13:53.068  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:13:53.068  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.infrastructure.domain.User
+2020-01-28 09:13:53.068  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbDomain
+2020-01-28 09:13:53.068  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: USE_CASE_HISTORICAL_ENTRY_CACHE
+2020-01-28 09:13:53.068  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbParameterTemplate
+2020-01-28 09:13:53.068  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbInterface
+2020-01-28 09:13:53.068  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: UseCaseGraphCache
+2020-01-28 09:13:53.068  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: historyStatesCache
+2020-01-28 09:13:53.068  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:13:53.068  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.infrastructure.domain.User.authorities
+2020-01-28 09:13:53.068  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: TIMER_PARAMETER_BY_NAME_AND_RELEASE_CACHE
+2020-01-28 09:13:53.068  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: MESSAGE_ELEMENT_CACHE_BY_RELEASE
+2020-01-28 09:13:53.068  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbMessageType
+2020-01-28 09:13:53.068  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: USE_CASE_IN_VERSION
+2020-01-28 09:13:53.068  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbUseCaseFile
+2020-01-28 09:13:53.068  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: ELEMENT_BY_FIELD_TAG_AND_RELEASE
+2020-01-28 09:13:53.068  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbElement
+2020-01-28 09:13:53.068  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbSystem
+2020-01-28 09:13:53.068  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: RELEASE_CONTENT_CACHE
+2020-01-28 09:13:53.068  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbUseCaseParent
+2020-01-28 09:13:53.068  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbInterfaceConsumer
+2020-01-28 09:13:53.068  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_TEMPLATE_CACHE
+2020-01-28 09:13:53.068  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbSystemType
+2020-01-28 09:14:09.180  INFO 12467 --- [           main] c.i.i.knowledge.api.BPMNImportResource   : Extract metadata called
+2020-01-28 09:14:09.454  INFO 12467 --- [           main] c.i.i.k.s.impl.KbUseCaseCommonService    : Acquire lock for a034cf1f-df3c-417d-a8e6-8d02e74f5f9e by user
+2020-01-28 09:14:09.891  INFO 12467 --- [           main] c.i.i.k.s.impl.KbUseCaseCommonService    : Acquire lock for a034cf1f-df3c-417d-a8e6-8d02e74f5f9e by user
+2020-01-28 09:14:09.912  INFO 12467 --- [           main] c.i.i.knowledge.api.KbUseCaseResource    : REST request to publish UseCase generated-medium-use-case-2-KbDomainDTO{id=8, shortCode='CB', name='Correspondent Banking', description='none', hierarchyLevel='SUB_BUSINESS_AREA'} by user user
+2020-01-28 09:14:13.061  INFO 12467 --- [           main] c.i.i.k.l.LockingUseCaseLifecycleManager : use case persisted: a034cf1f-df3c-417d-a8e6-8d02e74f5f9e
+2020-01-28 09:14:13.062  INFO 12467 --- [           main] c.i.i.knowledge.api.KbUseCaseResource    : async publish use case process started
+2020-01-28 09:14:13.812  INFO 12467 --- [           main] .i.i.k.r.p.PublicationProcessServiceImpl : Scheduling publication: f152bb4c-c7da-439e-8c9f-261a88d48ecc user
+2020-01-28 09:14:13.824  INFO 12467 --- [           main] .i.i.k.r.p.PublicationProcessServiceImpl : Published start events
+2020-01-28 09:14:13.830  INFO 12467 --- [           main] .i.i.k.r.p.PublicationProcessServiceImpl : Start publication of release 'f152bb4c-c7da-439e-8c9f-261a88d48ecc'
+2020-01-28 09:14:13.835  INFO 12467 --- [           main] c.i.i.k.s.impl.KbReleaseServiceImpl      : ======== Starting NEW publication, releaseUuid: f152bb4c-c7da-439e-8c9f-261a88d48ecc =========
+2020-01-28 09:14:14.143  INFO 12467 --- [           main] c.i.i.k.release.ReleaseContentValidator  : Validating 1 use cases
+2020-01-28 09:14:15.395  INFO 12467 --- [           main] .i.k.r.c.ReleaseContentDescriptorFactory : Building release content for release 'f152bb4c-c7da-439e-8c9f-261a88d48ecc' in version 0.0
+2020-01-28 09:14:15.396  INFO 12467 --- [           main] .i.k.r.c.ReleaseContentDescriptorFactory : Exporting 100 elements to release content
+2020-01-28 09:14:15.397  INFO 12467 --- [           main] .i.k.r.c.ReleaseContentDescriptorFactory : Exporting 101 parameters to release content
+2020-01-28 09:14:15.398  INFO 12467 --- [           main] .i.k.r.c.ReleaseContentDescriptorFactory : Exporting 0 parameter templates to release content
+2020-01-28 09:14:15.404  INFO 12467 --- [           main] .i.k.r.c.ReleaseContentDescriptorFactory : Exporting 10 systems to release content
+2020-01-28 09:14:15.532  INFO 12467 --- [           main] .i.k.r.c.ReleaseContentDescriptorFactory : Exporting 180 interfaces to release content
+2020-01-28 09:14:15.860  INFO 12467 --- [           main] .i.k.r.c.ReleaseContentDescriptorFactory : Exporting 180 interface messages to release content
+2020-01-28 09:14:15.863  INFO 12467 --- [           main] .i.k.r.c.ReleaseContentDescriptorFactory : Exporting 1 use cases and subprocesses to release content
+2020-01-28 09:14:15.864  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Delete test cases remaining from previous failed publication, useCase: a034cf1f-df3c-417d-a8e6-8d02e74f5f9e, release: {"uuid":"f152bb4c-c7da-439e-8c9f-261a88d48ecc","version":"1.0","name":"Performance Release 4"}
+2020-01-28 09:14:15.868  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Test case discovery process started for release: f152bb4c-c7da-439e-8c9f-261a88d48ecc
+2020-01-28 09:14:17.590  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:18.081  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:18.560  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:19.039  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:19.498  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:19.964  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:20.384  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:20.814  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:21.283  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:21.857  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:22.411  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:22.949  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:23.558  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:24.266  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:24.978  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:25.457  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:25.934  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:26.412  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:26.896  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:27.371  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:27.848  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:28.304  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:28.763  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:29.199  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:29.669  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:30.160  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:30.685  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:31.351  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:32.031  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:33.654  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:34.311  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:35.488  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:36.276  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:37.051  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:37.813  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:38.737  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:39.610  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:40.378  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:41.156  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:41.961  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:42.920  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:43.983  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:44.486  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:45.048  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:45.656  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:14:46.171  INFO 12467 --- [           main] c.o.testscript.TestCaseDiscoveryProcess  : Use-case 'a034cf1f-df3c-417d-a8e6-8d02e74f5f9e' processed with 4565 total paths. Discovered 4565 valid TC and 0 invalid TC and 0 skipped TC due to errors: []
+2020-01-28 09:14:46.171  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Publication of use case resulted with 4565 valid and 0 invalid test cases out of 4565 possible paths in BPMN
+2020-01-28 09:14:46.188  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Test case discovery process completed
+2020-01-28 09:14:46.188  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 65 test cases
+2020-01-28 09:14:46.193  INFO 12467 --- [           main] c.i.i.k.r.ReleaseContentValidationReport : Publish use case statistics : Valid : 1, Invalid : 0
+2020-01-28 09:14:46.197  INFO 12467 --- [           main] .i.i.k.r.p.PublicationProcessServiceImpl : Publication of release 'f152bb4c-c7da-439e-8c9f-261a88d48ecc' completed with status: PUBLISHED. It took: 00:00:32
+2020-01-28 09:14:46.198  INFO 12467 --- [           main] .i.i.k.r.p.PublicationProcessServiceImpl : Clean Release and Use case hash map validation status
+2020-01-28 09:14:46.222  INFO 12467 --- [           main] c.i.i.k.r.process.PublicationProcess     : ======== Ended publication, releaseUuid: f152bb4c-c7da-439e-8c9f-261a88d48ecc =========
+2020-01-28 09:14:46.234  INFO 12467 --- [           main] c.i.i.k.r.api.KbPublishReportResource    : Requested latest report for release: f152bb4c-c7da-439e-8c9f-261a88d48ecc
+Performance (for 4565 tc): 7.10 ms/tc => 8446 tc/min
+
+java.lang.AssertionError:
+Expecting:
+ <7.103833515881709>
+to be less than:
+ <6.0>
+
+	at com.insightguard.igapp.knowledge.api.PublishReleaseIntTest_Performance.measurePublishPerformance(PublishReleaseIntTest_Performance.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:40)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+
+2020-01-28 09:14:46.282  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 1 (class com.insightguard.igapp.knowledge.domain.KbMessageType)
+2020-01-28 09:14:46.282  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 101 (class com.insightguard.igapp.knowledge.domain.KbParameter)
+2020-01-28 09:14:46.283  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.283  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.284  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.284  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.284  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.284  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.284  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.284  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.285  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.285  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.285  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.285  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.285  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.285  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.286  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.286  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.286  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.286  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.287  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.287  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.287  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.287  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.287  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.287  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.288  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.288  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.288  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.288  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.288  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.289  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.289  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.289  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.289  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.289  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.290  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.290  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.290  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.290  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.290  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.290  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.291  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.291  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.291  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.291  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.292  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.292  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.292  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.292  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.292  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.292  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.293  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.293  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.293  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.293  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.294  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.294  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.294  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.294  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.294  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.294  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.295  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.295  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.295  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.295  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.296  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.296  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.296  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.296  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.296  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.296  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.297  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.297  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.297  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.297  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.298  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.298  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.298  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.298  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.298  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.298  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.299  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.299  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.299  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.299  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.300  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.300  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.300  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.300  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.301  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.301  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.301  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.301  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.302  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.302  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.302  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.302  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.303  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.303  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.303  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.303  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.304  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.304  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.304  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.304  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.304  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.304  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.305  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.305  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.305  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.305  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.305  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.305  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.306  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.306  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.306  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.306  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.307  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.307  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.307  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.307  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.307  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.307  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.308  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.308  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.308  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.308  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.308  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.309  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.309  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.309  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.309  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.309  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.310  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.310  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.310  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.310  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.310  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.310  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.311  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.311  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.311  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.311  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.311  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.311  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.312  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.312  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.312  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.312  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.313  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.313  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.313  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.313  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.313  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.313  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.314  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.314  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.314  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.314  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.314  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.314  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.315  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.315  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.315  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.315  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.316  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.316  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.316  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.316  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.316  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.316  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.317  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.317  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.317  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.317  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.317  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.317  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.318  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.318  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.318  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.318  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.318  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.319  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.319  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.319  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.319  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.319  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.320  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.320  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.320  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.320  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.320  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.320  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.321  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.321  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.321  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.321  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.321  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.321  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.322  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.322  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.322  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:46.322  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:46.323  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 0 (class com.insightguard.igapp.knowledge.domain.KbParameterTemplate)
+2020-01-28 09:14:46.323  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 0 (class com.insightguard.igapp.knowledge.domain.KbTimerParameter)
+2020-01-28 09:14:46.323  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 100 (class com.insightguard.igapp.knowledge.domain.KbElement)
+2020-01-28 09:14:46.339  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 10 (class com.insightguard.igapp.knowledge.domain.KbSystem)
+2020-01-28 09:14:46.340  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 180 (class com.insightguard.igapp.knowledge.domain.KbInterface)
+2020-01-28 09:14:46.416  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 180 (class com.insightguard.igapp.knowledge.domain.KbInterfaceConsumer)
+2020-01-28 09:14:46.608  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 180 (class com.insightguard.igapp.knowledge.domain.KbInterfaceMessage)
+2020-01-28 09:14:46.754  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 1800 (class com.insightguard.igapp.knowledge.domain.KbMessageElement)
+2020-01-28 09:14:46.954  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 0 (class com.insightguard.igapp.knowledge.domain.TpEnvironment)
+2020-01-28 09:14:46.956  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 0 (class com.insightguard.igapp.knowledge.domain.TpConnector)
+2020-01-28 09:14:46.959  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 0 (class com.insightguard.igapp.knowledge.domain.TpTransformation)
+2020-01-28 09:14:46.964  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 0 (class com.insightguard.igapp.knowledge.domain.TpInjection)
+2020-01-28 09:14:46.968  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 0 (class com.insightguard.igapp.knowledge.domain.TpInterceptAction)
+2020-01-28 09:14:46.990  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 0 (class com.insightguard.igapp.knowledge.domain.TpInterceptionPoint)
+2020-01-28 09:14:46.992  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 0 (class com.insightguard.igapp.knowledge.domain.TpSystemEnvironment)
+2020-01-28 09:14:46.995  INFO 12467 --- [           main] c.i.i.k.t.TopologyObjectImportService    : OBJECTS TO BE IMPORTED: 0 (class com.insightguard.igapp.knowledge.domain.TpInterfaceSystemSimulation)
+2020-01-28 09:14:46.995  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating all caches
+2020-01-28 09:14:46.999  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: INTERFACE_MESSAGE_CACHE_BY_REF_AND_RELEASE
+2020-01-28 09:14:46.999  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: INTERFACE_MESSAGE_CONSUMERS_CACHE_BY_RELEASE
+2020-01-28 09:14:46.999  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.infrastructure.domain.Authority
+2020-01-28 09:14:47.000  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: MESSAGE_ELEMENT_CACHE_BY_MESSAGE_ID_AND_RELEASE
+2020-01-28 09:14:47.000  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: goldCopyCache
+2020-01-28 09:14:47.000  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbUseCase
+2020-01-28 09:14:47.000  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: ELEMENTS_BY_FIELD_TAGS_AND_RELEASE
+2020-01-28 09:14:47.000  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbInterfaceMessage
+2020-01-28 09:14:47.000  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: ELEMENT_ENRICHMENT_CACHE_BY_SYSTEM_ID_AND_RELEASE
+2020-01-28 09:14:47.000  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: HISTORICAL_PARAMETER_BY_NAME_AND_RELEASE_AND_VERSION_CACHE
+2020-01-28 09:14:47.000  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbParameter
+2020-01-28 09:14:47.000  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbRelease
+2020-01-28 09:14:47.000  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAM_CACHE_BY_NAME_AND_RELEASE
+2020-01-28 09:14:47.000  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.infrastructure.domain.User
+2020-01-28 09:14:47.000  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbDomain
+2020-01-28 09:14:47.000  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: USE_CASE_HISTORICAL_ENTRY_CACHE
+2020-01-28 09:14:47.000  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbParameterTemplate
+2020-01-28 09:14:47.000  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbInterface
+2020-01-28 09:14:47.000  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: UseCaseGraphCache
+2020-01-28 09:14:47.000  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: historyStatesCache
+2020-01-28 09:14:47.000  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_GENERATORS_AT_AGGREGATION_LEVEL
+2020-01-28 09:14:47.000  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.infrastructure.domain.User.authorities
+2020-01-28 09:14:47.000  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: TIMER_PARAMETER_BY_NAME_AND_RELEASE_CACHE
+2020-01-28 09:14:47.000  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: MESSAGE_ELEMENT_CACHE_BY_RELEASE
+2020-01-28 09:14:47.000  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbMessageType
+2020-01-28 09:14:47.000  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: USE_CASE_IN_VERSION
+2020-01-28 09:14:47.000  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbUseCaseFile
+2020-01-28 09:14:47.000  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: ELEMENT_BY_FIELD_TAG_AND_RELEASE
+2020-01-28 09:14:47.000  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbElement
+2020-01-28 09:14:47.000  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbSystem
+2020-01-28 09:14:47.000  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: RELEASE_CONTENT_CACHE
+2020-01-28 09:14:47.000  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbUseCaseParent
+2020-01-28 09:14:47.000  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbInterfaceConsumer
+2020-01-28 09:14:47.000  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: PARAMETER_TEMPLATE_CACHE
+2020-01-28 09:14:47.000  INFO 12467 --- [           main] c.i.i.c.api.CacheInvalidationResource    : Invalidating cache: com.insightguard.igapp.knowledge.domain.KbSystemType
+2020-01-28 09:15:06.048  INFO 12467 --- [           main] c.i.i.knowledge.api.BPMNImportResource   : Extract metadata called
+2020-01-28 09:15:06.350  INFO 12467 --- [           main] c.i.i.k.s.impl.KbUseCaseCommonService    : Acquire lock for e21222f3-ba24-448a-8501-ce30707235be by user
+2020-01-28 09:15:06.786  INFO 12467 --- [           main] c.i.i.k.s.impl.KbUseCaseCommonService    : Acquire lock for e21222f3-ba24-448a-8501-ce30707235be by user
+2020-01-28 09:15:06.804  INFO 12467 --- [           main] c.i.i.knowledge.api.KbUseCaseResource    : REST request to publish UseCase generated-medium-use-case-2-KbDomainDTO{id=8, shortCode='CB', name='Correspondent Banking', description='none', hierarchyLevel='SUB_BUSINESS_AREA'} by user user
+2020-01-28 09:15:09.080  INFO 12467 --- [           main] c.i.i.k.l.LockingUseCaseLifecycleManager : use case persisted: e21222f3-ba24-448a-8501-ce30707235be
+2020-01-28 09:15:09.081  INFO 12467 --- [           main] c.i.i.knowledge.api.KbUseCaseResource    : async publish use case process started
+2020-01-28 09:15:09.804  INFO 12467 --- [           main] .i.i.k.r.p.PublicationProcessServiceImpl : Scheduling publication: c5324f61-7412-4319-b9e5-cc441eb413f6 user
+2020-01-28 09:15:09.814  INFO 12467 --- [           main] .i.i.k.r.p.PublicationProcessServiceImpl : Published start events
+2020-01-28 09:15:09.819  INFO 12467 --- [           main] .i.i.k.r.p.PublicationProcessServiceImpl : Start publication of release 'c5324f61-7412-4319-b9e5-cc441eb413f6'
+2020-01-28 09:15:09.823  INFO 12467 --- [           main] c.i.i.k.s.impl.KbReleaseServiceImpl      : ======== Starting NEW publication, releaseUuid: c5324f61-7412-4319-b9e5-cc441eb413f6 =========
+2020-01-28 09:15:10.036  INFO 12467 --- [           main] c.i.i.k.release.ReleaseContentValidator  : Validating 1 use cases
+2020-01-28 09:15:11.194  INFO 12467 --- [           main] .i.k.r.c.ReleaseContentDescriptorFactory : Building release content for release 'c5324f61-7412-4319-b9e5-cc441eb413f6' in version 0.0
+2020-01-28 09:15:11.194  INFO 12467 --- [           main] .i.k.r.c.ReleaseContentDescriptorFactory : Exporting 100 elements to release content
+2020-01-28 09:15:11.196  INFO 12467 --- [           main] .i.k.r.c.ReleaseContentDescriptorFactory : Exporting 101 parameters to release content
+2020-01-28 09:15:11.196  INFO 12467 --- [           main] .i.k.r.c.ReleaseContentDescriptorFactory : Exporting 0 parameter templates to release content
+2020-01-28 09:15:11.201  INFO 12467 --- [           main] .i.k.r.c.ReleaseContentDescriptorFactory : Exporting 10 systems to release content
+2020-01-28 09:15:11.312  INFO 12467 --- [           main] .i.k.r.c.ReleaseContentDescriptorFactory : Exporting 180 interfaces to release content
+2020-01-28 09:15:11.629  INFO 12467 --- [           main] .i.k.r.c.ReleaseContentDescriptorFactory : Exporting 180 interface messages to release content
+2020-01-28 09:15:11.633  INFO 12467 --- [           main] .i.k.r.c.ReleaseContentDescriptorFactory : Exporting 1 use cases and subprocesses to release content
+2020-01-28 09:15:11.633  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Delete test cases remaining from previous failed publication, useCase: e21222f3-ba24-448a-8501-ce30707235be, release: {"uuid":"c5324f61-7412-4319-b9e5-cc441eb413f6","version":"1.0","name":"Performance Release 6"}
+2020-01-28 09:15:11.637  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Test case discovery process started for release: c5324f61-7412-4319-b9e5-cc441eb413f6
+2020-01-28 09:15:13.445  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:14.030  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:14.617  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:15.202  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:15.735  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:16.280  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:16.809  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:17.334  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:17.896  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:18.558  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:19.219  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:19.895  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:20.619  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:21.445  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:22.272  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:22.822  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:23.394  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:23.972  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:24.552  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:25.117  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:25.698  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:26.274  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:26.842  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:27.386  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:27.968  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:28.626  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:29.280  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:30.053  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:30.816  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:32.592  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:33.373  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:34.694  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:35.555  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:36.431  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:37.306  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:38.347  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:39.319  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:40.222  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:41.115  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:42.028  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:43.087  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:44.241  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:44.844  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:45.527  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:46.233  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 100 test cases
+2020-01-28 09:15:46.816  INFO 12467 --- [           main] c.o.testscript.TestCaseDiscoveryProcess  : Use-case 'e21222f3-ba24-448a-8501-ce30707235be' processed with 4565 total paths. Discovered 4565 valid TC and 0 invalid TC and 0 skipped TC due to errors: []
+2020-01-28 09:15:46.816  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Publication of use case resulted with 4565 valid and 0 invalid test cases out of 4565 possible paths in BPMN
+2020-01-28 09:15:46.817  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Test case discovery process completed
+2020-01-28 09:15:46.817  INFO 12467 --- [           main] .i.k.t.NewPersistTestCasesProcessManager : Persisting batch of 65 test cases
+2020-01-28 09:15:46.821  INFO 12467 --- [           main] c.i.i.k.r.ReleaseContentValidationReport : Publish use case statistics : Valid : 1, Invalid : 0
+2020-01-28 09:15:46.825  INFO 12467 --- [           main] .i.i.k.r.p.PublicationProcessServiceImpl : Publication of release 'c5324f61-7412-4319-b9e5-cc441eb413f6' completed with status: PUBLISHED. It took: 00:00:37
+2020-01-28 09:15:46.826  INFO 12467 --- [           main] .i.i.k.r.p.PublicationProcessServiceImpl : Clean Release and Use case hash map validation status
+2020-01-28 09:15:46.847  INFO 12467 --- [           main] c.i.i.k.r.process.PublicationProcess     : ======== Ended publication, releaseUuid: c5324f61-7412-4319-b9e5-cc441eb413f6 =========
+2020-01-28 09:15:46.860  INFO 12467 --- [           main] c.i.i.k.r.api.KbPublishReportResource    : Requested latest report for release: c5324f61-7412-4319-b9e5-cc441eb413f6
+Performance (for 4565 tc): 8.12 ms/tc => 7389 tc/min
+
+java.lang.AssertionError:
+Expecting:
+ <8.11960569550931>
+to be less than:
+ <6.0>
+
+	at com.insightguard.igapp.knowledge.api.PublishReleaseIntTest_Performance.measurePublishPerformance(PublishReleaseIntTest_Performance.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:40)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+
+Disconnected from the target VM, address: '127.0.0.1:35453', transport: 'socket'
+
+Process finished with exit code 255
